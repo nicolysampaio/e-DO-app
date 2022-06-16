@@ -1,6 +1,6 @@
 export const theme = {
   colors: {
-    background: "#F5F5F5",
+    background: "#E9ECF5",
     brand: "#39C5C7",
 
     surface_primary: "transparent",
