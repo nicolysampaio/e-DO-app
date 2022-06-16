@@ -3,14 +3,14 @@ import { Text, Image, TouchableOpacity } from "react-native";
 
 import { styles } from "../styles/home-page.styles";
 
-import { logoImage } from "../assets";
-import { mainImage } from "../assets";
+import { logoGOVImage } from "../assets";
+import { homePageImage } from "../assets";
 
 export function HomePage() {
   return (
     <>
-      <Image source={logoImage} />
-      <Image source={mainImage} />
+      <Image source={logoGOVImage} />
+      <Image source={homePageImage} />
 
       <Text style={styles.title}>e-<Text style={styles.title_black}>DO</Text></Text>
       <Text style={styles.subtitle}>Declaração de Óbito Eletrônica</Text>

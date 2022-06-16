@@ -2,6 +2,7 @@ import React from "react";
 import { View } from "react-native";
 
 import { HomePage } from "./src/components/HomePage";
+import { LoginPage } from './src/components/LoginPage';
 
 import { styles } from "./src/styles";
 
@@ -26,7 +27,7 @@ export default function App() {
   }
   return (
     <View style={styles.container}>
-      <HomePage />
+      <LoginPage />
     </View>
   );
 }

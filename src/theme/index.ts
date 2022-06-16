@@ -5,10 +5,12 @@ export const theme = {
 
     surface_primary: "transparent",
     surface_secondary: "#39C5C7",
+    surface_gov: "#1351B4",
 
     text_primary: "#697581",
     text_secondary: "#39C5C7",
     text_on_brand: "#E0E0E0",
+    text_gov: "#E0E0E0",
 
     border: "#39C5C7",
   },
