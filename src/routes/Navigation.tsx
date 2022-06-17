@@ -47,6 +47,7 @@ export function BottomTabNavigator() {
       initialRouteName="DoctorHomePage"
       screenOptions={{
         tabBarActiveTintColor: theme.colors.brand,
+        headerShown: false,
       }}
     >
       <BottomTab.Screen
