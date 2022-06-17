@@ -2,12 +2,12 @@ import React from "react";
 import { Text, Image, TouchableOpacity, View, Button } from "react-native";
 
 import { styles } from "../styles/home-page.styles";
-import { LoginPageProps } from '../routes';
+import { PageProps } from '../routes';
 
 import { logoGOVImage } from "../assets";
 import { homePageImage } from "../assets";
 
-export function HomePage({navigation}: LoginPageProps) {
+export function HomePage({navigation}: PageProps) {
   return (
     <View style={styles.container}>
       <Image source={logoGOVImage} />
