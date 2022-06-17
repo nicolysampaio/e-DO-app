@@ -1,7 +1,7 @@
 import * as React from "react";
-import { View, Text } from "react-native";
+import { StatusBar } from 'expo-status-bar';
 
-import { Navigation } from './src/navigation';
+import { Navigation } from './src/routes/Navigation';
 
 import {
   useFonts,
@@ -24,6 +24,9 @@ export default function App() {
   }
   
   return (
-    <Navigation/>
+    <>
+      <StatusBar style="dark" backgroundColor="transparent" translucent />
+      <Navigation/>
+    </>
   );
 }
