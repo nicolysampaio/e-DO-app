@@ -1,10 +1,7 @@
-import React from "react";
-import { View } from "react-native";
+import * as React from "react";
+import { View, Text } from "react-native";
 
-import { HomePage } from "./src/components/HomePage";
-import { LoginPage } from './src/components/LoginPage';
-
-import { styles } from "./src/styles";
+import { Navigation } from './src/navigation';
 
 import {
   useFonts,
@@ -25,9 +22,8 @@ export default function App() {
   if (!fontsLoaded) {
     return null;
   }
+  
   return (
-    <View style={styles.container}>
-      <LoginPage />
-    </View>
+    <Navigation/>
   );
 }
