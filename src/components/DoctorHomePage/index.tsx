@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { BottomTabNavigator } from '../../navigation';
+import { BottomTabNavigator } from '../../routes/Navigation';
 
 import { styles } from "../../styles/doctor-home-page.styles";
 

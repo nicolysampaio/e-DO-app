@@ -9,7 +9,7 @@ import {
   User,
 } from "phosphor-react-native";
 
-import { RootTabParamList, RootStackParamList } from "../routes";
+import { RootTabParamList, RootStackParamList } from ".";
 import { theme } from "../theme";
 
 import { HomePage } from "../components/HomePage";

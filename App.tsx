@@ -1,7 +1,7 @@
 import * as React from "react";
 import { View, Text } from "react-native";
 
-import { Navigation } from './src/navigation';
+import { Navigation } from './src/routes/Navigation';
 
 import {
   useFonts,
