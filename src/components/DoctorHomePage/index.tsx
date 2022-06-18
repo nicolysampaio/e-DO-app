@@ -11,7 +11,9 @@ import { declaracoesPendentesImage } from "../../assets";
 import { minhasDeclaracoesImage } from "../../assets";
 import { hospitaisImage } from "../../assets";
 
-export function DoctorHomePage() {
+import { NewDOPageProps } from '../../routes';
+
+export function DoctorHomePage({ navigation }: NewDOPageProps) {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -24,20 +26,20 @@ export function DoctorHomePage() {
         <Text style={styles.subtitle}>O que gostaria de fazer hoje?</Text>
       </View>
       <View style={styles.options}>
-        <TouchableOpacity style={styles.option} >
+        <TouchableOpacity style={styles.option} onPress={() => navigation.navigate("NewDO")}>
           <Image source={novaDeclaracaoImage} />
           <Text style={styles.option_title}>{`Criar nova
 e-DO`}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.option}>
+          <Image source={minhasDeclaracoesImage} />
+          <Text style={styles.option_title}>{`Minhas
+e-DOs`}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.option}>
           <Image source={declaracoesPendentesImage} />
           <Text style={styles.option_title}>{`Declarações 
 pendentes`}</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.option}>
-          <Image source={minhasDeclaracoesImage} />
-          <Text style={styles.option_title}>{`Minhas
-e-DO`}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.option}>
           <Image source={hospitaisImage} />

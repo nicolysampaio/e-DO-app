@@ -7,6 +7,7 @@ export type RootStackParamList = {
   Login: undefined;
   DoctorHome: undefined;
   NewDO: undefined;
+  Form: undefined;
 };
 
 export type HomePageProps = NativeStackScreenProps<
@@ -24,9 +25,14 @@ export type DoctorHomePageProps = NativeStackScreenProps<
   "DoctorHome"
 >;
 
-export type NewDO = NativeStackScreenProps<
+export type NewDOPageProps = NativeStackScreenProps<
   RootStackParamList,
   "NewDO"
+>;
+
+export type FormPageProps = NativeStackScreenProps<
+  RootStackParamList,
+  "Form"
 >;
 
 export type RootTabParamList = {
