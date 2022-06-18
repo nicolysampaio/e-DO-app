@@ -31,7 +31,7 @@ export function DoctorHomePage({ navigation }: NewDOPageProps) {
           <Text style={styles.option_title}>{`Criar nova
 e-DO`}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.option}>
+        <TouchableOpacity style={styles.option} onPress={() => navigation.navigate("MyDO")}>
           <Image source={minhasDeclaracoesImage} />
           <Text style={styles.option_title}>{`Minhas
 e-DOs`}</Text>

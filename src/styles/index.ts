@@ -8,4 +8,9 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  title: {
+    fontSize: 18,
+    fontFamily: theme.fonts.medium,
+    color: "#455A64",
+  },
 });

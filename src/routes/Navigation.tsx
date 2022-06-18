@@ -20,6 +20,7 @@ import { Pending } from "../components/DoctorHomePage/Pending";
 import { Account } from "../components/DoctorHomePage/Account";
 import { NewDeclaration } from '../components/NewDeclaration';
 import { FormSteps } from '../components/NewDeclaration/FormSteps';
+import { Continue } from '../components/NewDeclaration/FormSteps/ContinueSteps';
 
 export function Navigation() {
   return (
@@ -39,6 +40,7 @@ function RootNavigator() {
       <Stack.Screen name="DoctorHome" component={BottomTabNavigator} />
       <Stack.Screen name="NewDO" component={NewDeclaration} />
       <Stack.Screen name="Form" component={FormSteps} />
+      <Stack.Screen name="Continue" component={Continue} />
     </Stack.Navigator>
   );
 }

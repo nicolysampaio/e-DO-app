@@ -6,7 +6,7 @@ import { FormPageProps } from "../../../routes";
 import { ArrowRight, CaretDown, CaretLeft, CaretUp, Check } from "phosphor-react-native";
 import { theme } from "../../../theme";
 
-export function FormSteps({ navigation }: FormPageProps) {
+export function Continue({ navigation }: FormPageProps) {
   const [optionOne, setOptionOne] = React.useState(false);
   const [optionTwo, setOptionTwo] = React.useState(false);
 
@@ -22,9 +22,9 @@ export function FormSteps({ navigation }: FormPageProps) {
         <View style={styles.question_body}>
           <Text style={styles.step_title}>I - Identificação</Text>
           <View style={styles.question}>
-            <Text style={styles.question_number}>1{'  '}</Text>
+            <Text style={styles.question_number}>N{'  '}</Text>
             <ArrowRight size={14} color={theme.colors.text_primary}/>
-            <Text style={styles.question_title}>{'  '}Tipo de óbito</Text>
+            <Text style={styles.question_title}>{'  '}Pergunta</Text>
           </View>
           <View style={styles.question_answer}>
             <TouchableOpacity onPress={() => {
@@ -39,7 +39,7 @@ export function FormSteps({ navigation }: FormPageProps) {
               style={
                 optionOne ? 
                 styles.option_selected_text : 
-                styles.option_text}>Fetal</Text>
+                styles.option_text}>Opção 1</Text>
             </TouchableOpacity>
             <TouchableOpacity   onPress={() => {
               setOptionOne(false) 
@@ -53,12 +53,12 @@ export function FormSteps({ navigation }: FormPageProps) {
               style={
                 optionTwo ? 
                 styles.option_selected_text : 
-                styles.option_text}>Não fetal</Text>
+                styles.option_text}>Opção 2</Text>
             </TouchableOpacity>
           </View>
         </View>
         <View style={styles.buttons}>
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Form")}>
             <CaretUp weight='bold' size={32}  color={theme.colors.text_on_brand}/>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Continue")}>
